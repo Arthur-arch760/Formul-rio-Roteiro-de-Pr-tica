@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesquisa de Satisfação - DataMind Solutions</title>
+    <link rel=" stylesheet" href=" style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #F3F4F6;
+            color: #000000;
+        }
+
+        /* Header */
+        header {
+            background-color: #002fff;
+            padding: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo img {
+            width: 60px;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .intro h2 {
+            color: #133ae7;
+            margin-bottom: 10px;
+        }
+
+        form {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #1E3A8A;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .botoes {
+            text-align: center;
+        }
+
+        button {
+            background-color: #3B82F6;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #1E3A8A;
+        }
+
+        .limpar {
+            background-color: #ff0000;
+            color: rgb(255, 255, 255);
+        }
+
+        .limpar:hover {
+            background-color: #ff0000;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <!-- Use sua logo aqui -->
+        <img src="c:\Users\aluno.fsa\Downloads\DataMind Solutions.png" alt="Logo DataMind">
+        <h1>DataMind Solutions</h1>
+    </div>
+</header>
+
+<main>
+
+    <section class="intro">
+        <h2>Pesquisa de Satisfação do Cliente</h2>
+        <p>Sua opinião é muito importante para melhorarmos nossos serviços.
+           Responda a pesquisa abaixo.</p>
+    </section>
+
+    <form>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required>
+
+            <label for="idade">Idade</label>
+            <input type="number" id="idade">
+        </fieldset>
+
+        <fieldset>
+            <legend>Avaliação</legend>
+
+            <label>Como você avalia nosso atendimento?</label>
+<div class="inline">
+            <input type="radio" name="evaluation"> Excelente</label>
+            <input type="radio" name="evaluation"> Bom</label>
+            <input type="radio" name="evaluation"> Regular</label>
+            <input type="radio" name="evaluation"> Ruim</label>
+</div>
+            <label>Quais serviços você utilizou?</label>
+<div class="inline">
+            <input type="checkbox"> Site</label>
+            <input type="checkbox"> App</label>
+            <input type="checkbox"> Atendimento</label>
+            <input type="checkbox"> Entrega</label>
+</div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações Gerais</legend>
+
+            <label for="estado">Estado</label>
+            <select id="estado">
+                <option>Bahia</option>
+                <option>São Paulo</option>
+                <option>Rio de Janeiro</option>
+                <option>Minas Gerais</option>
+                <option>Pernambuco</option>
+                <option>Acre</option>
+                <option>Alagoas</option>
+                <option>Amapá</option>
+                <option>Amazonas</option>
+                <option>Ceará</option>
+                <option>Espirito Santo</option>
+                <option>Goiás</option>
+                <option>Maranhão</option>
+                <option>Mato Grosso</option>
+                <option>Mato Grosso do Sul</option>
+                <option>Pará</option>
+                <option>Paraíba</option>
+                <option>Paraná</option>
+                <option>Piauí</option>
+                <option>Rio Grande do Norte</option>
+                <option>Rio Grande do Sul</option>
+                <option>Rondônia</option>
+                <option>Roraima</option>
+                <option>Santa Catarina</option>
+                <option>Sergipe</option>
+                <option>Tocantins</option>
+            </select>
+
+            <label for="comentarios">Sugestões</label>
+            <textarea id="comentarios" rows="4"></textarea>
+
+            <label>
+                <input type="checkbox">
+                Deseja receber novidades?
+            </label>
+
+        </fieldset>
+
+        <div class="botoes">
+            <button type="submit">Enviar Pesquisa</button>
+            <button type="reset" class="limpar">Limpar Formulário</button>
+        </div>
+
+    </form>
+
+</main>
+
+</body>
+</html>
